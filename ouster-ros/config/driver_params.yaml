@@ -60,7 +60,7 @@
     # pub_static_tf[optional]: when this flag is set to True, the driver will
     # broadcast the TF transforms for the imu/sensor/lidar frames. Prevent the
     # driver from broadcasting TF transforms by setting this parameter to False.
-    pub_static_tf: true
+    pub_static_tf: false
     # proc_mask[optional]: use any combination of the 6 flags IMG, PCL, IMU, SCAN
     # RAW and TLM to enable or disable their respective messages.
     proc_mask: IMU|PCL|SCAN|IMG|RAW|TLM
@@ -71,7 +71,7 @@
     # use_system_default_qos[optional]: if false, data are published with sensor
     # data QoS. This is preferrable for production but default QoS is needed for
     # rosbag. See: https://github.com/ros2/rosbag2/issues/125
-    use_system_default_qos: false
+    use_system_default_qos: true
     # point_type[optional]: choose from: {original, native, xyz, xyzi, o_xyzi, 
     #                                     yzir}
     # Here is a breif description of each option:
